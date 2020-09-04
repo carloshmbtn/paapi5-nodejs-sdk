@@ -488,7 +488,7 @@ var awsv4 = require('./auth/sigv4');
     }
 
 
-    request.end(function(error, response) {
+    /*request.end(function(error, response) {
       if (callback) {
         var data = null;
         if (!error) {
@@ -503,7 +503,7 @@ var awsv4 = require('./auth/sigv4');
         }
         callback(error, data, response);
       }
-    });
+    });*/
 
     return request;
   };
